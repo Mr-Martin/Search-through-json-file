@@ -1,0 +1,145 @@
+/*-------------------------
+Setting box model to something easier
+to work with. Works in IE8 and above
+-------------------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*-------------------------
+	GENERAL
+--------------------------*/
+body {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	overflow-y: scroll;
+	font-size: 16px;
+	background: #f9f9f9;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h1 {font-size: 50px;}
+h2 {font-size: 35px;}
+h3 {font-size: 30px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+h6 {font-size: 15px;}
+
+li {
+
+}
+
+a {
+	text-decoration: none;
+	color: #ed3636;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/*-------------------------
+	REUSEABLE
+--------------------------*/
+.center {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.even {
+	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
+}
+
+.odd {
+
+}
+
+
+/*-------------------------
+	TOP
+--------------------------*/
+.top {
+	margin-bottom: 40px;
+	padding-top: 3px;
+	color: #fff;
+	background: #ed3636;
+}
+
+.wrapper {
+	
+}
+
+
+/*-------------------------
+	SEARCH
+--------------------------*/
+.search-box {
+	padding: 30px;
+	margin-top: 20px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #fcfcfc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+}
+
+.search {
+	border: 1px solid #eee;
+	border-radius: 3px;
+	width: 100%;
+	padding: 15px 10px;
+}
+
+.search:focus,
+.search:active {
+	outline-color: #ed3636;
+}
+
+.search-results {
+	display: none;
+	padding: 20px;
+	margin-top: 10px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #fcfcfc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+}
+
+.search-results li:first-child {
+	margin-top: 0px;
+	border-top: none;
+}
+
+.search-results a {
+	padding: 8px 15px;
+	display: block;
+}
+
+.search-results span {
+	float: right;
+	color: #ccc;
+}
+
+.search-results a:hover span {
+	color: #323232;
+}
